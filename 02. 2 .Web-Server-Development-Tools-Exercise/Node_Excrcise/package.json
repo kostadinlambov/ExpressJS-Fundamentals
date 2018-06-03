@@ -1,0 +1,25 @@
+{
+  "name": "02.3.Web-Server-Development-Tools-Exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-clean-css": "3.9.4",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-rename": "1.2.3",
+    "string": "^3.3.3",
+    "unescape": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6"
+  }
+}
