@@ -1,0 +1,1 @@
+{"name":"new Name","version":"0.0.1","description":"A simple demo project","main":"index.js","scripts":{"start":"index.js"},"keywords":["demo","node"],"author":"KL","license":"MIT"}

@@ -1,0 +1,13 @@
+{
+  "name": "NodeServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine": "10.2.1",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
