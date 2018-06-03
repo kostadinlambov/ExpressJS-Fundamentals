@@ -1,0 +1,12 @@
+{
+  "name": "01.2.Intro-to-Node-JS-Exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "KL",
+  "license": "MIT"
+}
