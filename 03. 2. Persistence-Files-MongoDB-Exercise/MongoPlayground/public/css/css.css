@@ -1,0 +1,27 @@
+img {
+    max-width: 400px;
+}
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.tag {
+    float: left;
+    width: 10%;
+}
+
+h1 {
+    text-align: center;
+    color: #be369c;
+}
+
+p {
+    text-align: center
+}
+
+button {
+    margin: auto
+}
