@@ -1,0 +1,33 @@
+
+<div class="error">
+    {{error}}
+</div>
+
+
+<div class="container">
+    <form  method="POST">
+        <div>
+            <label for="bookTitle">Title</label>
+            <input type="text" value="{{title}}" name="title" placeholder="The title of the book">
+        </div>
+        <div>
+            <label for="bookAuthor">Book author</label>
+            <input type="text" id="bookAuthor" name="author" placeholder="Book author" value="{{author}}">
+        </div>
+
+        <div>
+            <label for="bookYear">Release Date</label>
+            <input type="date" id="bookYear" name="releaseDate" placeholder="Date of release" value="{{releaseDate}}">
+        </div>
+
+        <div>
+            <label for="bookPoster">Image URL</label>
+            <input type="url" id="bookPoster" name="imageUrl" placeholder="Link to a image" value="{{imageUrl}}">
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>

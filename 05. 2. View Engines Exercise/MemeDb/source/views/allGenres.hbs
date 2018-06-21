@@ -1,0 +1,8 @@
+<hr/>
+<h1>Here are all Genres</h1>
+<hr/><br/>
+{{#each genres}}
+     {{> genrePartial}} 
+{{else}}
+    <div id="replaceMe">{{> errorPartial}}</div>
+{{/each}}

@@ -1,0 +1,8 @@
+    <hr/>
+    <h1>Here are your Memes</h1>
+    <hr/><br/>
+    {{#each memes}}
+        {{> memePartial}}
+    {{else}}
+        <div id="replaceMe">{{> errorPartial}}</div>
+    {{/each}}

@@ -1,0 +1,32 @@
+<hr/>
+<h1> Add New Meme</h1>
+<hr/><br/>
+<div class="container">
+    <form action="/memes/addMeme" enctype=multipart/form-data method="POST">
+        <label for="movieTitle">Title</label>
+        <input type="text" id="movieTitle" name="memeTitle" placeholder="The title of the movie" required>
+
+        <select name='genreSelect' id="genreSelect">
+            {{#each genres}}
+            <div id="replaceMe">{{> genreOption}}</div>
+            {{/each}}
+        </select>
+
+
+        <label for="moviePoster">Poster URL</label>
+        <input type="file" id="moviePoster" name="meme" placeholder="Link to a poster" required>
+
+        <input type="checkbox" name='status' id='status' checked> public
+
+        <label for="movieDescription">Movie description</label>
+        <textarea id="movieDescription" name="memeDescription" placeholder="Movie description" rows="10" cols="10" required></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+{{!-- {{#if message}}
+<div id="replaceMe">{{> successesPartial}}</div>
+{{else}}
+<div id="replaceMe">{{> errorPartial}}</div>
+{{/if}} --}}
