@@ -1,0 +1,13 @@
+<h1> Welcome to SoftUni Wiki!</h1>
+<section>
+    <h2>All articles</h2>
+    <div class="spacer">
+        <ul>
+            {{#each articles}}
+                    {{> article}}
+            {{else}}
+            <h1> There are no articles!</h1>
+            {{/each}}
+        </ul>
+    </div>
+</section>
