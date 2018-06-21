@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .message {
+            display: inline-block;
+            background-color: gainsboro;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {{#if message}}
+    <div class="message">{{message}}</div>
+    {{/if}}
+    <h1>Register to Shop</h1>
+    <form action="/auth/register" method="POST">
+        <p>Username</p>
+        <input type="text" name="username" value={{inputData.username}}>
+        <p>Password</p>
+        <input type="password" name="password" value={{inputData.password}}>
+        <p>Repeat</p>
+        <input type="password" name="repeat" value={{inputData.repeat}}>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>

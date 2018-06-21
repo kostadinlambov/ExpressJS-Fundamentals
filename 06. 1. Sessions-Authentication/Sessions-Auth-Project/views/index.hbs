@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+        }
+        .message {
+            display: inline-block;
+            background-color: gainsboro;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {{#if message}}
+    <div class="message">{{message}}</div>
+    {{/if}}
+    <h1>Welcome to Shop!</h1>
+    <h3>Welcome back, {{username}}</h3>
+    <h3>Items in cart: {{numItems}}</h3>
+    <a href="/cart">Checkout</a>
+    <div>
+        {{#each products}}
+        <div class="product">
+            <h3>{{name}}</h3>
+            <p>Price {{cost}}</p>
+            <a href="/add/{{@index}}">Add to cart</a>
+        </div>
+        {{/each}}
+    </div>
+</body>
+
+</html>

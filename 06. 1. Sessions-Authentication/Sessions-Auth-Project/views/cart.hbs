@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Your cart</h1>
+    <h3>Items in cart: {{numItems}}</h3>
+    <a href="/">Resume shopping</a>
+    <div>
+        {{#each items}}
+        <div class="product">
+            <h3>{{name}}</h3>
+            <p>Price {{cost}}</p>
+            <a href="/remove/{{@index}}">Remove</a>
+        </div>
+        {{/each}}
+    </div>
+    <h3>Total: {{total}}</h3>
+</body>
+
+</html>
